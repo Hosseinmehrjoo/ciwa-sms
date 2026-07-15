@@ -1,0 +1,1016 @@
+:root {
+	--ciwa-purple: #7c3aed;
+	--ciwa-blue: #2563eb;
+	--ciwa-pink: #ec4899;
+	--ciwa-teal: #06b6d4;
+	--ciwa-green: #10b981;
+	--ciwa-amber: #f59e0b;
+	--ciwa-ink: #1e1b4b;
+	--ciwa-muted: #6b7280;
+	--ciwa-bg: #f5f3ff;
+	--ciwa-card: #ffffff;
+	--ciwa-radius: 18px;
+	--ciwa-shadow: 0 18px 40px rgba(76, 29, 149, 0.14);
+}
+
+.ciwa-wrap {
+	max-width: 980px;
+	margin: 24px auto;
+	font-family: "Vazirmatn", Tahoma, sans-serif;
+	color: var(--ciwa-ink);
+	direction: rtl;
+}
+
+.ciwa-hero {
+	display: flex;
+	align-items: center;
+	gap: 18px;
+	padding: 26px 28px;
+	border-radius: var(--ciwa-radius);
+	background: linear-gradient(120deg, #7c3aed 0%, #2563eb 50%, #06b6d4 100%);
+	color: #fff;
+	box-shadow: var(--ciwa-shadow);
+	margin-bottom: 22px;
+}
+
+.ciwa-hero__icon {
+	font-size: 44px;
+	line-height: 1;
+	filter: drop-shadow(0 6px 12px rgba(0, 0, 0, 0.25));
+}
+
+.ciwa-title {
+	margin: 0;
+	font-size: 26px;
+	font-weight: 800;
+	display: flex;
+	align-items: baseline;
+	flex-wrap: wrap;
+	gap: 10px;
+}
+
+.ciwa-subtitle {
+	font-size: 13px;
+	font-weight: 500;
+	opacity: 0.85;
+	background: rgba(255, 255, 255, 0.18);
+	padding: 3px 10px;
+	border-radius: 999px;
+}
+
+.ciwa-hero__desc {
+	margin: 8px 0 0;
+	font-size: 13px;
+	opacity: 0.92;
+	line-height: 1.7;
+}
+
+.ciwa-tabs {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	margin-bottom: 20px;
+}
+
+.ciwa-tab {
+	display: inline-flex;
+	align-items: center;
+	padding: 11px 20px;
+	border-radius: 999px;
+	font-weight: 700;
+	font-size: 14px;
+	text-decoration: none;
+	color: var(--ciwa-ink);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	box-shadow: 0 4px 10px rgba(0, 0, 0, 0.04);
+	transition: all 0.2s ease;
+}
+
+.ciwa-tab:hover {
+	transform: translateY(-2px);
+	color: var(--ciwa-purple);
+}
+
+.ciwa-tab--active {
+	color: #fff;
+	background: linear-gradient(120deg, #7c3aed, #ec4899);
+	border-color: transparent;
+	box-shadow: 0 10px 22px rgba(236, 72, 153, 0.35);
+}
+
+.ciwa-tab-content {
+	background: var(--ciwa-card);
+	border-radius: var(--ciwa-radius);
+	padding: 28px;
+	box-shadow: var(--ciwa-shadow);
+	min-height: 260px;
+}
+
+.ciwa-card {
+	background: linear-gradient(180deg, #ffffff, #faf5ff);
+	border: 1px solid #ede9fe;
+	border-radius: var(--ciwa-radius);
+	padding: 24px;
+	box-shadow: 0 10px 26px rgba(124, 58, 237, 0.08);
+}
+
+.ciwa-card__title {
+	margin: 0 0 18px;
+	font-size: 17px;
+	font-weight: 800;
+	color: var(--ciwa-purple);
+}
+
+.ciwa-field {
+	display: flex;
+	flex-direction: column;
+	gap: 7px;
+	margin-bottom: 18px;
+}
+
+.ciwa-field__label {
+	font-size: 13px;
+	font-weight: 700;
+	color: var(--ciwa-ink);
+}
+
+.ciwa-input {
+	width: 100%;
+	padding: 12px 14px;
+	border-radius: 12px;
+	border: 1.5px solid #e5e7eb;
+	background: #fff;
+	font-family: inherit;
+	font-size: 14px;
+	color: var(--ciwa-ink);
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ciwa-input:focus {
+	outline: none;
+	border-color: var(--ciwa-purple);
+	box-shadow: 0 0 0 4px rgba(124, 58, 237, 0.15);
+}
+
+.ciwa-actions {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 12px;
+	margin-top: 22px;
+}
+
+.ciwa-btn {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	gap: 8px;
+	border: none;
+	cursor: pointer;
+	font-family: inherit;
+	font-weight: 700;
+	font-size: 14px;
+	padding: 12px 24px;
+	border-radius: 12px;
+	text-decoration: none;
+	transition: transform 0.15s ease, box-shadow 0.2s ease, opacity 0.2s;
+	color: #fff;
+}
+
+.ciwa-btn:hover {
+	transform: translateY(-2px);
+}
+
+.ciwa-btn--primary {
+	background: linear-gradient(120deg, #7c3aed, #2563eb);
+	box-shadow: 0 10px 22px rgba(37, 99, 235, 0.35);
+}
+
+.ciwa-btn--accent {
+	background: linear-gradient(120deg, #ec4899, #f59e0b);
+	box-shadow: 0 10px 22px rgba(236, 72, 153, 0.35);
+}
+
+.ciwa-btn--ghost {
+	background: #f1f5f9;
+	color: var(--ciwa-ink);
+}
+
+.ciwa-btn--sm {
+	padding: 8px 16px;
+	font-size: 13px;
+}
+
+.ciwa-test-result {
+	margin-top: 16px;
+	font-size: 14px;
+	font-weight: 700;
+}
+
+.ciwa-test-result--ok {
+	color: var(--ciwa-green);
+}
+
+.ciwa-test-result--err {
+	color: #ef4444;
+}
+
+.ciwa-notice {
+	display: flex;
+	gap: 14px;
+	align-items: flex-start;
+	padding: 18px 20px;
+	border-radius: var(--ciwa-radius);
+	margin-bottom: 22px;
+	box-shadow: 0 10px 26px rgba(0, 0, 0, 0.07);
+}
+
+.ciwa-notice__icon {
+	font-size: 26px;
+	line-height: 1;
+}
+
+.ciwa-notice__body p {
+	margin: 0 0 10px;
+	line-height: 1.8;
+	font-size: 14px;
+}
+
+.ciwa-notice--success {
+	background: linear-gradient(120deg, #ecfdf5, #d1fae5);
+	border: 1px solid #a7f3d0;
+}
+
+.ciwa-notice--error {
+	background: linear-gradient(120deg, #fef2f2, #fee2e2);
+	border: 1px solid #fecaca;
+}
+
+.ciwa-notice--info {
+	background: linear-gradient(120deg, #eff6ff, #dbeafe);
+	border: 1px solid #bfdbfe;
+}
+
+.ciwa-card__hint {
+	margin: -8px 0 18px;
+	font-size: 13px;
+	color: var(--ciwa-muted);
+	line-height: 1.8;
+}
+
+.ciwa-rules {
+	display: flex;
+	flex-direction: column;
+	gap: 8px;
+}
+
+.ciwa-rules__head,
+.ciwa-rules__row {
+	display: grid;
+	grid-template-columns: 1.4fr 1.2fr 0.7fr 2.2fr;
+	gap: 10px;
+	align-items: center;
+}
+
+.ciwa-rules__head > *,
+.ciwa-rules__row > * {
+	min-width: 0;
+	width: 100%;
+	box-sizing: border-box;
+}
+
+.ciwa-rules__head {
+	padding: 0 4px 6px;
+	font-size: 12px;
+	font-weight: 800;
+	color: var(--ciwa-purple);
+	border-bottom: 2px solid #ede9fe;
+}
+
+.ciwa-rules__row {
+	padding: 8px;
+	border-radius: 12px;
+	background: #fff;
+	border: 1px solid #f1f5f9;
+	transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+.ciwa-rules__row:focus-within {
+	border-color: var(--ciwa-purple);
+	box-shadow: 0 6px 16px rgba(124, 58, 237, 0.1);
+}
+
+.ciwa-rules__row .ciwa-input {
+	padding: 9px 11px;
+	font-size: 13px;
+}
+
+.ciwa-rules__delay {
+	max-width: 90px;
+}
+
+.ciwa-rules__delay:disabled {
+	background: #f1f5f9;
+	color: #9ca3af;
+}
+
+@media (max-width: 900px) {
+	.ciwa-rules__head {
+		display: none;
+	}
+	.ciwa-rules__row {
+		grid-template-columns: 1fr;
+	}
+	.ciwa-rules__row > * {
+		width: 100%;
+	}
+	.ciwa-rules__delay {
+		max-width: none;
+	}
+}
+
+.ciwa-field__hint {
+	font-size: 12px;
+	color: var(--ciwa-muted);
+	line-height: 1.7;
+	margin-top: 2px;
+}
+
+.ciwa-textarea {
+	resize: vertical;
+	min-height: 90px;
+	line-height: 1.7;
+	font-family: inherit;
+}
+
+.ciwa-datetime {
+	display: flex;
+	gap: 8px;
+	align-items: center;
+	position: relative;
+	flex-wrap: wrap;
+}
+
+.ciwa-datetime #ciwa_campaign_date {
+	flex: 1 1 220px;
+	cursor: pointer;
+	background: #fff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' viewBox='0 0 24 24' fill='none' stroke='%237c3aed' stroke-width='2'%3E%3Crect x='3' y='4' width='18' height='18' rx='2'/%3E%3Cpath d='M16 2v4M8 2v4M3 10h18'/%3E%3C/svg%3E") no-repeat left 12px center;
+	padding-left: 38px;
+}
+
+.ciwa-datetime__sel {
+	width: 78px;
+	flex: 0 0 auto;
+	text-align: center;
+}
+
+.ciwa-datetime__sep {
+	font-weight: 800;
+	color: var(--ciwa-purple);
+}
+
+.ciwa-jalali {
+	position: absolute;
+	top: calc(100% + 8px);
+	right: 0;
+	z-index: 1000;
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 14px;
+	box-shadow: 0 18px 40px rgba(76, 29, 149, 0.18);
+	padding: 14px;
+	width: 270px;
+}
+
+.ciwa-jalali__head {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	margin-bottom: 10px;
+}
+
+.ciwa-jalali__title {
+	font-weight: 800;
+	color: var(--ciwa-purple);
+	font-size: 14px;
+}
+
+.ciwa-jalali__nav {
+	width: 30px;
+	height: 30px;
+	border: none;
+	border-radius: 9px;
+	background: #f3f0ff;
+	color: var(--ciwa-purple);
+	font-weight: 800;
+	cursor: pointer;
+	font-size: 16px;
+	line-height: 1;
+}
+
+.ciwa-jalali__nav:hover {
+	background: #e9e3ff;
+}
+
+.ciwa-jalali__grid {
+	display: grid;
+	grid-template-columns: repeat(7, 1fr);
+	gap: 4px;
+	text-align: center;
+}
+
+.ciwa-jalali__wd {
+	font-size: 11px;
+	color: #9ca3af;
+	font-weight: 800;
+	padding-bottom: 4px;
+}
+
+.ciwa-jalali__day {
+	padding: 7px 0;
+	border-radius: 9px;
+	cursor: pointer;
+	font-size: 13px;
+	transition: background 0.15s;
+}
+
+.ciwa-jalali__day:hover {
+	background: #ede9fe;
+}
+
+.ciwa-jalali__day--empty {
+	cursor: default;
+}
+
+.ciwa-jalali__day--sel {
+	background: var(--ciwa-purple);
+	color: #fff;
+	font-weight: 700;
+}
+
+.ciwa-table {
+	width: 100%;
+	border-collapse: collapse;
+	font-size: 13px;
+}
+
+.ciwa-table th,
+.ciwa-table td {
+	text-align: right;
+	padding: 12px 10px;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.ciwa-table th {
+	font-weight: 800;
+	color: var(--ciwa-purple);
+	font-size: 12px;
+}
+
+.ciwa-table__actions {
+	display: flex;
+	gap: 8px;
+	flex-wrap: wrap;
+}
+
+.ciwa-badge {
+	display: inline-block;
+	padding: 3px 12px;
+	border-radius: 999px;
+	font-size: 12px;
+	font-weight: 700;
+}
+
+.ciwa-badge--pending {
+	background: #fef3c7;
+	color: #b45309;
+}
+
+.ciwa-badge--sent {
+	background: #d1fae5;
+	color: #047857;
+}
+
+.ciwa-placeholder__icon {
+	font-size: 48px;
+	margin-bottom: 10px;
+}
+
+.ciwa-footer {
+	margin-top: 24px;
+	font-size: 12px;
+	color: var(--ciwa-muted);
+	text-align: right;
+}
+
+.ciwa-footer a {
+	color: var(--ciwa-purple);
+	text-decoration: none;
+	font-weight: 700;
+}
+
+.ciwa-modal {
+	position: fixed;
+	inset: 0;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	z-index: 99999;
+}
+
+.ciwa-modal__overlay {
+	position: absolute;
+	inset: 0;
+	background: rgba(30, 27, 75, 0.55);
+	backdrop-filter: blur(4px);
+}
+
+.ciwa-modal__box {
+	position: relative;
+	width: min(520px, 92vw);
+	background: linear-gradient(160deg, #ffffff, #faf5ff);
+	border-radius: 22px;
+	padding: 36px 32px;
+	text-align: center;
+	box-shadow: 0 30px 60px rgba(76, 29, 149, 0.4);
+	animation: ciwa-pop 0.35s cubic-bezier(0.18, 0.89, 0.32, 1.28);
+}
+
+@keyframes ciwa-pop {
+	from { transform: scale(0.85); opacity: 0; }
+	to { transform: scale(1); opacity: 1; }
+}
+
+.ciwa-modal__badge {
+	font-size: 54px;
+	margin-bottom: 8px;
+}
+
+.ciwa-modal__box h2 {
+	margin: 0 0 12px;
+	font-size: 22px;
+	font-weight: 800;
+	color: var(--ciwa-purple);
+}
+
+.ciwa-modal__box p {
+	margin: 0 0 22px;
+	line-height: 2;
+	font-size: 14.5px;
+	color: var(--ciwa-ink);
+}
+
+.ciwa-modal__actions {
+	display: flex;
+	gap: 12px;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.ciwa-filters {
+	display: flex;
+	gap: 8px;
+	margin-bottom: 16px;
+	flex-wrap: wrap;
+}
+
+.ciwa-filter {
+	padding: 8px 18px;
+	border-radius: 999px;
+	font-size: 13px;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--ciwa-ink);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	transition: all 0.2s;
+}
+
+.ciwa-filter:hover {
+	color: var(--ciwa-purple);
+}
+
+.ciwa-filter--active {
+	color: #fff;
+	background: linear-gradient(120deg, #7c3aed, #ec4899);
+	border-color: transparent;
+}
+
+.ciwa-pagination {
+	display: flex;
+	gap: 6px;
+	margin-top: 16px;
+	flex-wrap: wrap;
+}
+
+.ciwa-page {
+	min-width: 34px;
+	height: 34px;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 13px;
+	color: var(--ciwa-ink);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	transition: all 0.2s;
+}
+
+.ciwa-page:hover {
+	color: var(--ciwa-purple);
+	border-color: var(--ciwa-purple);
+}
+
+.ciwa-page--active {
+	color: #fff;
+	background: linear-gradient(120deg, #7c3aed, #2563eb);
+	border-color: transparent;
+}
+
+.ciwa-pagination-list {
+	display: flex;
+	gap: 6px;
+	flex-wrap: wrap;
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.ciwa-pagination__item {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 10px;
+	text-decoration: none;
+	font-weight: 700;
+	font-size: 13px;
+	color: var(--ciwa-ink);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	transition: all 0.2s;
+}
+
+.ciwa-pagination__item a {
+	display: block;
+	padding: 0 10px;
+	height: 34px;
+	line-height: 34px;
+}
+
+.ciwa-pagination__item--active a {
+	color: #fff;
+}
+
+.ciwa-pagination__item--active {
+	background: linear-gradient(120deg, #7c3aed, #2563eb);
+	border-color: transparent;
+}
+
+.ciwa-pagination__item--disabled {
+	opacity: 0.5;
+	cursor: default;
+}
+
+.ciwa-pagination__item:hover:not(.ciwa-pagination__item--disabled) {
+	color: var(--ciwa-purple);
+	border-color: var(--ciwa-purple);
+}
+
+.ciwa-pagination__link {
+	display: block;
+	padding: 0 10px;
+	height: 34px;
+	line-height: 34px;
+	text-align: center;
+	color: var(--ciwa-ink);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+	border-radius: 10px;
+	text-decoration: none;
+	transition: all 0.2s;
+}
+
+.ciwa-pagination__link:hover {
+	color: var(--ciwa-purple);
+	border-color: var(--ciwa-purple);
+}
+
+.ciwa-log-msg {
+	max-width: 260px;
+	white-space: nowrap;
+	overflow: hidden;
+	text-overflow: ellipsis;
+}
+
+.ciwa-detail-table {
+	width: 100%;
+	border-collapse: collapse;
+	margin: 14px 0;
+	font-size: 13px;
+}
+
+.ciwa-detail-table th,
+.ciwa-detail-table td {
+	text-align: right;
+	padding: 10px 12px;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.ciwa-detail-table th {
+	color: var(--ciwa-purple);
+	font-weight: 800;
+	width: 40%;
+}
+
+.ciwa-detail-message {
+	text-align: right;
+	background: #faf5ff;
+	border: 1px solid #ede9fe;
+	border-radius: 12px;
+	padding: 12px 14px;
+	font-size: 13px;
+	line-height: 1.8;
+}
+
+.ciwa-detail-message p {
+	margin: 6px 0 0;
+	white-space: pre-wrap;
+}
+
+.ciwa-modal--detail .ciwa-modal__box {
+	max-width: 460px;
+}
+
+.ciwa-card__head {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	gap: 12px;
+	flex-wrap: wrap;
+	margin-bottom: 14px;
+}
+
+.ciwa-kpis {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 12px;
+	margin-bottom: 22px;
+}
+
+.ciwa-kpi {
+	border-radius: var(--ciwa-radius);
+	padding: 18px 16px;
+	color: #fff;
+	box-shadow: 0 10px 22px rgba(124, 58, 237, 0.18);
+	text-align: center;
+}
+
+.ciwa-kpi__value {
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.ciwa-kpi__label {
+	margin-top: 8px;
+	font-size: 12.5px;
+	opacity: 0.95;
+}
+
+.ciwa-kpi--sent { background: linear-gradient(120deg, #10b981, #06b6d4); }
+.ciwa-kpi--failed { background: linear-gradient(120deg, #ef4444, #f59e0b); }
+.ciwa-kpi--rate { background: linear-gradient(120deg, #7c3aed, #2563eb); }
+.ciwa-kpi--pending { background: linear-gradient(120deg, #ec4899, #f59e0b); }
+.ciwa-kpi--campaign { background: linear-gradient(120deg, #2563eb, #06b6d4); }
+
+@media (max-width: 900px) {
+	.ciwa-kpis { grid-template-columns: repeat(2, 1fr); }
+}
+
+.ciwa-range {
+	display: flex;
+	gap: 6px;
+}
+
+.ciwa-range__btn {
+	padding: 6px 14px;
+	border-radius: 999px;
+	font-size: 12.5px;
+	font-weight: 700;
+	text-decoration: none;
+	color: var(--ciwa-ink);
+	background: #fff;
+	border: 1px solid #e5e7eb;
+}
+
+.ciwa-range__btn--active {
+	color: #fff;
+	background: linear-gradient(120deg, #7c3aed, #2563eb);
+	border-color: transparent;
+}
+
+.ciwa-chart {
+	display: flex;
+	align-items: flex-end;
+	gap: 6px;
+	height: 200px;
+	padding-top: 10px;
+	overflow-x: auto;
+}
+
+.ciwa-chart__col {
+	flex: 1 1 0;
+	min-width: 22px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	height: 100%;
+	justify-content: flex-end;
+}
+
+.ciwa-chart__bars {
+	display: flex;
+	gap: 3px;
+	align-items: flex-end;
+	height: 100%;
+	width: 100%;
+	justify-content: center;
+}
+
+.ciwa-chart__bar {
+	width: 9px;
+	border-radius: 5px 5px 0 0;
+	min-height: 2px;
+	transition: height 0.3s;
+}
+
+.ciwa-chart__bar--sent { background: linear-gradient(180deg, #10b981, #06b6d4); }
+.ciwa-chart__bar--failed { background: linear-gradient(180deg, #ef4444, #f59e0b); }
+
+.ciwa-chart__label {
+	font-size: 10px;
+	color: var(--ciwa-muted);
+	margin-top: 6px;
+}
+
+.ciwa-chart__legend {
+	display: flex;
+	gap: 18px;
+	margin-top: 12px;
+	font-size: 12.5px;
+	color: var(--ciwa-muted);
+}
+
+.ciwa-dot {
+	display: inline-block;
+	width: 10px;
+	height: 10px;
+	border-radius: 50%;
+	margin-left: 5px;
+	vertical-align: middle;
+}
+
+.ciwa-dot--sent { background: #10b981; }
+.ciwa-dot--failed { background: #ef4444; }
+
+.ciwa-progress {
+	height: 10px;
+	background: #f1f5f9;
+	border-radius: 999px;
+	overflow: hidden;
+	margin-bottom: 4px;
+}
+
+.ciwa-progress__bar {
+	height: 100%;
+	background: linear-gradient(90deg, #7c3aed, #2563eb);
+	border-radius: 999px;
+}
+
+.ciwa-help__section {
+	padding: 16px 0;
+	border-bottom: 1px solid #f1f5f9;
+}
+
+.ciwa-help__section:last-child {
+	border-bottom: none;
+}
+
+.ciwa-help__section h4 {
+	margin: 0 0 10px;
+	font-size: 15px;
+	font-weight: 800;
+	color: var(--ciwa-purple);
+}
+
+.ciwa-help__section ul {
+	margin: 0;
+	padding-right: 20px;
+	line-height: 2;
+	font-size: 13.5px;
+}
+
+.ciwa-help__section li {
+	margin-bottom: 4px;
+}
+
+.ciwa-example {
+	margin-top: 12px;
+	padding: 12px 14px;
+	background: #faf5ff;
+	border: 1px dashed #c4b5fd;
+	border-radius: 12px;
+	font-size: 13px;
+	line-height: 2;
+	color: var(--ciwa-ink);
+}
+
+.ciwa-example code,
+.ciwa-vars code {
+	background: #ede9fe;
+	color: #5b21b6;
+	padding: 2px 7px;
+	border-radius: 6px;
+	font-size: 12.5px;
+	direction: ltr;
+	display: inline-block;
+}
+
+.ciwa-vars th,
+.ciwa-vars td {
+	text-align: right;
+	vertical-align: middle;
+}
+
+.ciwa-vars__ex code {
+	direction: rtl;
+}
+
+.ciwa-help__support {
+	background: linear-gradient(120deg, #faf5ff, #eff6ff);
+	border-radius: 14px;
+	padding: 16px 18px;
+}
+
+.ciwa-help__support p {
+	margin: 6px 0;
+	font-size: 13.5px;
+	line-height: 1.9;
+}
+
+/* Dashboard Widget Styles */
+.wp-dashboard-widget .ciwa-dashboard-widget {
+	font-family: inherit;
+}
+
+.wp-dashboard-widget .ciwa-kpis {
+	display: grid;
+	grid-template-columns: repeat(5, 1fr);
+	gap: 12px;
+	margin-bottom: 22px;
+}
+
+.wp-dashboard-widget .ciwa-kpi {
+	border-radius: var(--ciwa-radius);
+	padding: 18px 16px;
+	color: #fff;
+	box-shadow: 0 10px 22px rgba(124, 58, 237, 0.18);
+	text-align: center;
+}
+
+.wp-dashboard-widget .ciwa-kpi__value {
+	font-size: 28px;
+	font-weight: 800;
+	line-height: 1;
+}
+
+.wp-dashboard-widget .ciwa-kpi__label {
+	margin-top: 8px;
+	font-size: 12.5px;
+	opacity: 0.95;
+}
+
+.wp-dashboard-widget .ciwa-kpi--sent { background: linear-gradient(120deg, #10b981, #06b6d4); }
+.wp-dashboard-widget .ciwa-kpi--failed { background: linear-gradient(120deg, #ef4444, #f59e0b); }
+.wp-dashboard-widget .ciwa-kpi--rate { background: linear-gradient(120deg, #7c3aed, #2563eb); }
+.wp-dashboard-widget .ciwa-kpi--pending { background: linear-gradient(120deg, #ec4899, #f59e0b); }
+.wp-dashboard-widget .ciwa-kpi--campaign { background: linear-gradient(120deg, #2563eb, #06b6d4); }
+
+.wp-dashboard-widget .ciwa-gateway-status {
+	background: #f3f0ff;
+	border-radius: 8px;
+	padding: 10px 12px;
+	margin-bottom: 16px;
+	font-size: 13px;
+}
+
+.wp-dashboard-widget .ciwa-dashboard-actions {
+	text-align: center;
+}
+
+@media (max-width: 900px) {
+	.wp-dashboard-widget .ciwa-kpis { grid-template-columns: repeat(2, 1fr); }
+}
