@@ -1,3 +1,7 @@
+<img width="828" height="858" alt="Screenshot 2026-07-15 151906" src="https://github.com/user-attachments/assets/3162cc60-2afd-45dc-80e7-a075fd7e9161" />
+
+
+
 \# 🚀 CIWA Auto SMS
 
 
@@ -53,6 +57,10 @@ Instead of manually sending follow-up messages, the plugin automatically sends p
 
 
 \### 📲 Automatic SMS Automation
+
+
+<img width="833" height="864" alt="Screenshot 2026-07-15 151944" src="https://github.com/user-attachments/assets/5af7ec81-ae94-4f6e-a174-da6757e4d78f" />
+
 
 
 
@@ -136,6 +144,7 @@ Example:
 
 \### 🎯 Marketing Campaigns
 
+<img width="834" height="867" alt="Screenshot 2026-07-15 152006" src="https://github.com/user-attachments/assets/c2651615-4da6-45d5-931f-7c00a393df44" />
 
 
 Create scheduled SMS campaigns.
@@ -240,6 +249,7 @@ Thank you for shopping at {site\_name}.
 
 \# 📊 Reports \& Analytics
 
+<img width="828" height="858" alt="Screenshot 2026-07-15 151906" src="https://github.com/user-attachments/assets/3162cc60-2afd-45dc-80e7-a075fd7e9161" />
 
 
 Monitor everything from a single dashboard.
@@ -266,6 +276,7 @@ Monitor everything from a single dashboard.
 
 \# 📝 Detailed Logs
 
+<img width="839" height="869" alt="Screenshot 2026-07-15 151925" src="https://github.com/user-attachments/assets/ab9a92c2-f88b-4602-82c3-d6b7caa75100" />
 
 
 Every SMS is logged.
@@ -294,6 +305,7 @@ Features:
 
 \# 📡 Supported SMS Gateways
 
+<img width="383" height="173" alt="Screenshot 2026-07-15 152311" src="https://github.com/user-attachments/assets/3a69a591-a248-4eb4-b260-7072d5e3191a" />
 
 
 The plugin currently supports:
